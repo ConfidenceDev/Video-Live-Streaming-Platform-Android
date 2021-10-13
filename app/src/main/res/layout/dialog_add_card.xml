@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_270sdp"
+    android:layout_height="@dimen/_360sdp"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_24sdp"
+    android:background="@color/grey500"
+    android:elevation="@dimen/_2sdp"
+    app:cardCornerRadius="@dimen/_6sdp"
+    app:cardElevation="@dimen/_6sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topAddCard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_46sdp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/addCardText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:lineSpacingExtra="@dimen/_3sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/add_card"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:font_text="ubuntu.bold.ttf"/>
+
+            <ImageView
+                android:id="@+id/closeAddCardBtn"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:foreground="?attr/selectableItemBackground"
+                android:src="@mipmap/ic_close"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topAddCard">
+
+            <ImageView
+                android:id="@+id/cardTypes"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/visamasterverve"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/pay"/>
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="top"
+                app:layout_constraintBottom_toTopOf="@+id/save_card_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardTypes"
+                android:scrollbarSize="@dimen/_1sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:padding="@dimen/_12sdp">
+
+                    <me.vebbo.android.utils.CustomEditTextView
+                        android:id="@+id/edit_email_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:hint="@string/email"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/primary_dark"
+                        android:textColorHint="@color/hint_text"
+                        android:textSize="@dimen/_17ssp"
+                        app:font_edit_text="ubuntu.regular.ttf"/>
+
+                    <me.vebbo.android.utils.CustomEditTextView
+                        android:id="@+id/edit_card_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/edit_email_address"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:hint="@string/card_name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/primary_dark"
+                        android:textColorHint="@color/hint_text"
+                        android:textSize="@dimen/_17ssp"
+                        app:font_edit_text="ubuntu.regular.ttf"/>
+
+
+                    <!--=========== Expiry Text for credit card number ======-->
+                    <me.vebbo.android.utils.CustomEditTextView
+                        android:id="@+id/edit_card_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/edit_card_name"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:hint="@string/card_number"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="19"
+                        android:textColor="@color/primary_dark"
+                        android:textColorHint="@color/hint_text"
+                        android:textSize="@dimen/_17ssp"
+                        app:font_edit_text="ubuntu.regular.ttf"/>
+
+                    <LinearLayout
+                        android:id="@+id/layout_expiry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/edit_card_number"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <me.vebbo.android.utils.CustomEditTextView
+                            android:id="@+id/edit_expiry_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/expiry_month"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxEms="4"
+                            android:maxLength="2"
+                            android:maxLines="1"
+                            android:padding="@dimen/_6sdp"
+                            android:textColor="@color/primary_dark"
+                            android:textColorHint="@color/hint_text"
+                            android:textSize="@dimen/_17ssp"
+                            app:font_edit_text="ubuntu.regular.ttf"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="@dimen/_4sdp" />
+
+                        <me.vebbo.android.utils.CustomEditTextView
+                            android:id="@+id/edit_expiry_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/yy"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxEms="4"
+                            android:maxLength="2"
+                            android:maxLines="1"
+                            android:padding="@dimen/_6sdp"
+                            android:textColor="@color/primary_dark"
+                            android:textColorHint="@color/hint_text"
+                            android:textSize="@dimen/_17ssp"
+                            app:font_edit_text="ubuntu.regular.ttf"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/_4sdp"/>
+
+                        <me.vebbo.android.utils.CustomEditTextView
+                            android:id="@+id/edit_cvv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/cvv"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:maxEms="4"
+                            android:maxLength="3"
+                            android:maxLines="1"
+                            android:padding="@dimen/_6sdp"
+                            android:textColor="@color/primary_dark"
+                            android:textColorHint="@color/hint_text"
+                            android:textSize="@dimen/_17ssp"
+                            app:font_edit_text="ubuntu.regular.ttf"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/_4sdp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+            <me.vebbo.android.utils.CustomButton
+                android:id="@+id/save_card_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_36sdp"
+                android:layout_marginEnd="@dimen/_36sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:background="@drawable/rounded_btn_accent"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:font_text="ubuntu.regular.ttf"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

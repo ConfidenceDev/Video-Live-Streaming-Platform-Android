@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="calligraphy_tag_id" type="id"/>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="font_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomEditTextView">
+        <attr name="font_edit_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomButton">
+        <attr name="font_button" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ForegroundView">
+        <attr name="foreground" format="color"/>
+        <attr name="android:foregroundGravity" format="integer"/>
+        <attr name="foregroundInsidePadding" format="boolean"/>
+    </declare-styleable>
+
+</resources>

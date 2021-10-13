@@ -1,0 +1,86 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "me.vebbo.android"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 13
+        versionName "13.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            shrinkResources false
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dexOptions{
+        javaMaxHeapSize "4g"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //Android
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+
+    //Lifecycle
+    def lifecycle_version = "2.2.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.3.1'
+
+    //Others
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+
+    //Paystack
+    implementation 'co.paystack.android:paystack:3.1.2'
+
+    //Billing
+    implementation 'com.android.billingclient:billing:4.0.0'
+
+    //Camerax
+    def camerax_version = "1.0.0-alpha05"
+    implementation "androidx.camera:camera-core:$camerax_version"
+    implementation "androidx.camera:camera-camera2:$camerax_version"
+
+    //Socket IO
+    implementation ('io.socket:socket.io-client:1.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+}

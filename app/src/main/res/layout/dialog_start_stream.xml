@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_280sdp"
+    android:layout_height="@dimen/_220sdp"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_24sdp"
+    android:background="@color/grey500"
+    android:elevation="@dimen/_2sdp"
+    app:cardCornerRadius="@dimen/_6sdp"
+    app:cardElevation="@dimen/_6sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topBroad"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_46sdp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/closeBroadBtn"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:foreground="?attr/selectableItemBackground"
+                android:src="@mipmap/ic_close"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/broadText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:lineSpacingExtra="@dimen/_3sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/start_a_stream"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp"
+                app:font_text="ubuntu.bold.ttf"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/closeBroadBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topBroad"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:id="@+id/mainLin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:background="@drawable/bg_selection">
+
+                    <me.vebbo.android.utils.CustomTextView
+                        android:id="@+id/min1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/_5_min"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="@color/black"
+                        android:padding="@dimen/_6sdp"
+                        app:font_text="ubuntu.regular.ttf"
+                        android:background="@drawable/bg_item_selection1"
+                        android:foreground="?attr/selectableItemBackground"/>
+
+                    <LinearLayout
+                        android:id="@+id/lin2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_item_selection2"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <me.vebbo.android.utils.CustomTextView
+                            android:id="@+id/min2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_10_min"
+                            android:gravity="center"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="@color/black"
+                            app:font_text="ubuntu.regular.ttf"/>
+
+                        <ImageView
+                            android:id="@+id/lock2"
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:src="@mipmap/lock"
+                            app:tint="@color/black_200"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_item_selection2"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <me.vebbo.android.utils.CustomTextView
+                            android:id="@+id/min3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_20_min"
+                            android:gravity="center"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="@color/black"
+                            app:font_text="ubuntu.regular.ttf"/>
+
+                        <ImageView
+                            android:id="@+id/lock3"
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:src="@mipmap/lock"
+                            app:tint="@color/black_200"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_item_selection3"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <me.vebbo.android.utils.CustomTextView
+                            android:id="@+id/min4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_30_min"
+                            android:gravity="center"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="@color/black"
+                            app:font_text="ubuntu.regular.ttf"/>
+
+                        <ImageView
+                            android:id="@+id/lock4"
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:src="@mipmap/lock"
+                            app:tint="@color/black_200"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <me.vebbo.android.utils.CustomTextView
+                    android:id="@+id/tag_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="@dimen/_14ssp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:text="@string/_0_16"
+                    app:font_text="ubuntu.regular.ttf"
+                    android:layout_gravity="end"/>
+
+                <me.vebbo.android.utils.CustomEditTextView
+                    android:id="@+id/tagField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_box"
+                    android:hint="@string/stream_tag"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:padding="@dimen/_8sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_dark"
+                    android:textColorHint="@color/hint_text"
+                    android:textSize="@dimen/_14ssp"
+                    app:font_edit_text="ubuntu.regular.ttf"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:imeOptions="actionNext"/>
+
+                <me.vebbo.android.utils.CustomButton
+                    android:id="@+id/continue_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:background="@drawable/rounded_btn_primary"
+                    android:textAllCaps="false"
+                    android:text="@string/continue_txt"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:font_button="ubuntu.regular.ttf"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_270sdp"
+    android:layout_height="@dimen/_300sdp"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_24sdp"
+    android:background="@color/grey500"
+    android:elevation="@dimen/_2sdp"
+    app:cardCornerRadius="@dimen/_6sdp"
+    app:cardElevation="@dimen/_6sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topBroad"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_46sdp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/close_publish_btn"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:foreground="?attr/selectableItemBackground"
+                android:src="@mipmap/ic_close"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <me.vebbo.android.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:lineSpacingExtra="@dimen/_3sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/drop_a_note"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp"
+                app:font_text="ubuntu.bold.ttf"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/close_publish_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topBroad"
+            android:scrollbarSize="@dimen/_1sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <me.vebbo.android.utils.CustomTextView
+                    android:id="@+id/note_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:text="@string/_0_127"
+                    app:font_text="ubuntu.regular.ttf"/>
+
+                <me.vebbo.android.utils.CustomEditTextView
+                    android:id="@+id/note_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/write"
+                    android:textColorHint="@color/hint_text"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/primary_dark"
+                    android:background="@drawable/edit_box"
+                    android:gravity="start|top"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:lineSpacingExtra="@dimen/_4sdp"
+                    android:inputType="textMultiLine"
+                    android:maxLength="127"
+                    android:lines="6"
+                    app:font_edit_text="ubuntu.regular.ttf"/>
+
+                <me.vebbo.android.utils.CustomButton
+                    android:id="@+id/note_post_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_54sdp"
+                    android:layout_marginStart="@dimen/_54sdp"
+                    android:layout_marginBottom="@dimen/_14sdp"
+                    android:background="@drawable/rounded_btn_primary"
+                    android:textAllCaps="false"
+                    android:text="@string/post"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    app:font_button="ubuntu.regular.ttf"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

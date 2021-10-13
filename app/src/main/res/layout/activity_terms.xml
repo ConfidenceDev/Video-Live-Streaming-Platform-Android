@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TermsActivity"
+    android:background="@color/grey500">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/termsBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_6sdp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/termsToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            app:titleTextColor="@color/primary_dark"
+            app:titleTextAppearance="?android:attr/textAppearanceLarge"
+            app:popupTheme="@style/AppTheme.PopupOverLay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/termsBack"
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:src="@mipmap/ic_close_black"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <me.vebbo.android.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_amp_policy"
+                    android:textSize="@dimen/_18ssp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_centerVertical="true"
+                    app:font_text="ubuntu.bold.ttf"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termsBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/legalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/legalText"
+                android:gravity="start|top"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                app:font_text="ubuntu.regular.ttf"/>
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/privacyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/privacyText"
+                android:gravity="start|top"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:font_text="ubuntu.regular.ttf"/>
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/collectionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/collectionText"
+                android:gravity="start|top"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:font_text="ubuntu.regular.ttf"/>
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/deviceInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/deviceInfo"
+                android:gravity="start|top"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:font_text="ubuntu.regular.ttf"/>
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/useInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/useOfInfo"
+                android:gravity="start|top"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:font_text="ubuntu.regular.ttf"/>
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/useInfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/useOfInfoText"
+                android:gravity="start|top"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:font_text="ubuntu.regular.ttf"/>
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/sharingInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/sharingInfo"
+                android:gravity="start|top"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:font_text="ubuntu.regular.ttf"/>
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/security"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/security"
+                android:gravity="start|top"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:font_text="ubuntu.regular.ttf"/>
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/yourChoices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/yourChoices"
+                android:gravity="start|top"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:font_text="ubuntu.regular.ttf"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

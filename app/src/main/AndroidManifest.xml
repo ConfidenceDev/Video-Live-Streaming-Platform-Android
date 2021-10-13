@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="me.vebbo.android">
+
+    <uses-feature
+        android:name="android.hardware.camera2.full"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.raw"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera2.autofocus"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera2.flash"
+        android:required="false"/>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="false" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity
+            android:name=".activities.HomeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.vebbo.me"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.EditAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LicenseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TermsActivity"
+            android:screenOrientation="portrait" />
+        <meta-data
+            android:name="co.paystack.android.PublicKey"
+            android:value="/*Paystack Public Key for Payments*/"/>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

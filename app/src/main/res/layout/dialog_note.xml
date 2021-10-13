@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_270sdp"
+    android:layout_height="@dimen/_240sdp"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_24sdp"
+    android:background="@color/grey500"
+    android:elevation="@dimen/_2sdp"
+    app:cardCornerRadius="@dimen/_6sdp"
+    app:cardElevation="@dimen/_6sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/closeNoteBtn"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@mipmap/ic_close_black"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/noteImg"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:src="@drawable/circle_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <RelativeLayout
+            android:id="@+id/noteDivider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/primary_dark"
+            android:layout_above="@+id/closeNoteBtn"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_8sdp"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/noteDivider"
+            android:scrollbarSize="@dimen/_1sdp"
+            android:layout_marginBottom="@dimen/_8sdp">
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/note_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:textSize="@dimen/_17ssp"
+                android:textColor="@color/black"
+                app:font_text="ubuntu.regular.ttf"/>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

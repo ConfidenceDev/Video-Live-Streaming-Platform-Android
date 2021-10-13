@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/commentItemRel"
+    android:padding="@dimen/_6sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/commentImg"
+        android:layout_width="@dimen/_26sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:src="@drawable/circle_bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:foreground="?attr/selectableItemBackground"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_alignParentTop="true"
+       android:layout_toEndOf="@+id/commentImg"
+       android:layout_marginStart="@dimen/_6sdp">
+
+       <me.vebbo.android.utils.CustomTextView
+           android:id="@+id/commentItemName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="start|center_vertical"
+           android:textColor="@color/white"
+           android:textSize="@dimen/_14ssp"
+           app:font_text="ubuntu.bold.ttf"
+           android:textStyle="bold"
+           android:singleLine="true"
+           android:maxLines="1"
+           android:lines="1"/>
+
+       <me.vebbo.android.utils.CustomTextView
+           android:id="@+id/commentItemDate"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="start|center_vertical"
+           android:textColor="@color/white"
+           android:textSize="@dimen/_8ssp"
+           app:font_text="ubuntu.regular.ttf"
+           android:singleLine="true"
+           android:maxLines="1"
+           android:lines="1"
+           android:layout_marginTop="@dimen/_3sdp"/>
+
+       <me.vebbo.android.utils.CustomTextView
+           android:id="@+id/commentItemText"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:lineSpacingExtra="@dimen/_6sdp"
+           android:gravity="start|center_vertical"
+           android:textColor="@color/white"
+           android:textSize="@dimen/_14ssp"
+           app:font_text="ubuntu.regular.ttf"
+           android:layout_marginTop="@dimen/_6sdp"/>
+
+       <RelativeLayout
+           android:id="@+id/comment_divider"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_1sdp"
+           android:background="@color/trans_white"
+           android:layout_marginTop="@dimen/_6sdp"/>
+
+   </LinearLayout>
+
+</RelativeLayout>

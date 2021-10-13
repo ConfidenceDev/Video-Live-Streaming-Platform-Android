@@ -1,0 +1,290 @@
+<resources>
+    <string name="app_name" translatable="false">Vebbo</string>
+    <string name="store_url" translatable="false">https://play.google.com/store/apps/details?id=me.vebbo.android</string>
+    <string name="web_add" translatable="false">https://www.vebbo.me</string>
+    <string name="feedback_header" translatable="false">Feedback from Vebbo Mobile (ANDROID)</string>
+
+    <string name="version">Vebbo version 1.0.0</string>
+    <string name="invite_header">Vebbo App Invite</string>
+    <string name="invite_message">Download the Vebbo app now to video chat with random users,
+        meet people and make new friends on a button click.
+        Available on Google play or download using the link below: \n
+        https://play.google.com/store/apps/details?id=me.vebbo.android</string>
+    <string name="send_a_mail">Send a mail</string>
+    <string name="no_client">You don\'t have any email client</string>
+    <string name="sign_out_message">Are you sure you want to sign out?</string>
+    <string name="delete_header">Are you sure you want to delete account?</string>
+    <string name="delete_subject">Request to Delete Account (VEBBO MOBILE)</string>
+    <string name="delete_message">Message:</string>
+    <string name="feedback_message">Message:</string>
+    <string name="share_app_using">Share app using</string>
+    <string name="deleted">Deleted!</string>
+    <string name="your_account">Your account!</string>
+
+    <string name="moments_ago">Moments ago</string>
+    <string name="just_now">just now</string>
+    <string name="a_minute">A minute ago</string>
+    <string name="minutes">minutes ago</string>
+    <string name="an_hour">An hour ago</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="days_ago">days ago</string>
+
+    <string name="request_permission_failed">Request Permission Failed!</string>
+
+    <string name="help1">INFO: Vebbo is a free live streaming platform, bringing people together by providing short video streams.\n\n</string>
+    <string name="help2">HOW IT WORKS: 1. Click on the \"Tv\" button to start a stream, end at any time by clicking the \"End\" button.
+        \n\n2. The stream counter shows your position and if you are next to stream, the server automatically selects the next stream.
+        \nYou can stream for 5 min for free or add more time by paying a little token.
+        \n\n3. You can drop a note for everyone online to see by clicking the \"Add Note\" button at the bottom right corner when streaming.
+        \n\nNOTE: If reported more than the set threshold, your stream will be terminated and/or your device will be blocked from starting a new stream,
+        so avoid any illicit or inappropriate behaviours. \n\n</string>
+    <string name="help3">By using Vebbo you agree to our terms of service (See Settings).
+        \nFor bug reports, suggestions, complaints, inquiries and
+        feedback kindly send us a mail.\n</string>
+
+    <string name="not_available">Not available</string>
+    <string name="send_mail">Send a Mail</string>
+    <string name="message">Message: </string>
+    <string name="error">Error: Something went wrong, try again.</string>
+    <string name="username_exist">Username already exists.</string>
+    <string name="not_complete">You need a username and a profile picture.</string>
+    <string name="err">Error:</string>
+    <string name="saved">Saved successfully!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="k">k</string>
+    <string name="m">m</string>
+    <string name="b">b</string>
+    <string name="t">t</string>
+    <string name="q">q</string>
+    <string name="u">u</string>
+
+    <string name="internet_continue">You need Mobile Data or wifi connection to continue.</string>
+    <string name="dollar_sign">$</string>
+    <string name="naira_sign">₦</string>
+    <string name="cvv">CVV</string>
+    <string name="expiry">Expiry</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_name">Card Holder Name</string>
+    <string name="pay">Pay</string>
+    <string name="yy">YY</string>
+    <string name="expiry_month">MM</string>
+    <string name="email">Email</string>
+    <string name="required">Required.</string>
+    <string name="transaction_success">Transaction Successful! payment reference:</string>
+    <string name="transaction_err">Transaction failed: </string>
+    <string name="transaction_failed">Transaction failed, something went wrong, try again.</string>
+    <string name="request_err">Error sending payment reference to server</string>
+    <string name="card_valid">Card is Valid</string>
+    <string name="card_not_valid">Card not Valid</string>
+    <string name="cancel_payment">Are you sure you want to cancel?</string>
+    <string name="to_pay">To pay:</string>
+
+    <string name="get_started_text">Connect, Video chat, Meet People, Make new Friends on a button click</string>
+    <string name="by_signing_in_you_agree_to_our">By signing in you agree to our</string>
+    <string name="google_account">Google Account</string>
+
+    <string name="wait">Wait</string>
+    <string name="cancel">Cancel</string>
+    <string name="activate">Activate</string>
+    <string name="activate_msg">Activate account to use these features</string>
+    <string name="later">Later</string>
+    <string name="not_typed">You\'ve not written anything</string>
+    <string name="sent">Sent!</string>
+
+    <string name="about">About</string>
+    <string name="tell_a_friend">Tell a Friend</string>
+    <string name="share_app">Share App</string>
+    <string name="rate_app">Rate App</string>
+    <string name="send_us_a_feedback">Send us a Feedback</string>
+    <string name="license">License</string>
+    <string name="terms_amp_policy"><![CDATA[Terms & Policy]]></string>
+    <string name="help">Help</string>
+    <string name="settings">Settings</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="ok">OK</string>
+    <string name="finish">Finish</string>
+
+    <string name="write">Write…</string>
+    <string name="edit_account">Edit Account</string>
+    <string name="save">Save</string>
+    <string name="continue_txt">Continue</string>
+    <string name="info">Info</string>
+
+    <string name="online">Online</string>
+    <string name="field_empty">The field might be empty!</string>
+    <string name="permission_return">Permission failed. Click allow when asked for permission.</string>
+    <string name="no_user">No available user, try again!</string>
+    <string name="place_holder">…</string>
+    <string name="gateway">Gateway</string>
+    <string name="generate_token">Generate Token</string>
+    <string name="app_update">App update</string>
+    <string name="app_update_msg">You are using an older version, a newer version is available.</string>
+    <string name="update">Update</string>
+    <string name="pay_cost">0.49</string>
+    <string name="completed">Completed!</string>
+    <string name="connecting_device">Connecting device to server</string>
+    <string name="connected">Connected.</string>
+    <string name="format">Format:</string>
+    <string name="invite">Invite</string>
+    <string name="send">Send</string>
+    <string name="visit_page">Visit our Facebook page</string>>
+    <string name="dots">…</string>
+    <string name="website">Website</string>
+    <string name="one_dollar">$0.99</string>
+
+    <string name="username">Username</string>
+    <string name="location">Location</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="twitter">Twitter</string>
+    <string name="facebook_name">Facebook Name E.g: John Joe</string>
+    <string name="instagram_name">Instagram Name</string>
+    <string name="twitter_name">Twitter Name</string>
+    <string name="flag_as_inappropriate">Flag as inappropriate</string>
+    <string name="flag_msg">Flag this question as inappropriate</string>
+    <string name="flag_sent">Flag sent!</string>
+    <string name="post">Post</string>
+    <string name="_0_32">0/32</string>
+    <string name="_32">/32</string>
+
+    <string name="back_exit">Press back again to exit</string>
+    <string name="report">Report</string>
+    <string name="home">Home</string>
+    <string name="report_this_user">Report this user</string>
+    <string name="stay">Stay</string>
+    <string name="leave">Leave</string>
+    <string name="stay_msg">Are you sure you want to leave</string>
+    <string name="report_sent">Report sent!</string>
+    <string name="report_received">You\'ve been reported</string>
+    <string name="suspension">Your account has been suspended</string>
+    <string name="suspension_notice_header">Activate suspended</string>
+    <string name="suspension_notice_msg">Due to report requests, your account has been locked temporarily for a period of 3 days.
+        \nSee settings page for more info. \n\n Time Line:</string>
+    <string name="streamers">Streamers:</string>
+    <string name="start">Start</string>
+    <string name="room_name">Stream ID</string>
+    <string name="no_room_found">No stream found with that ID</string>
+    <string name="publish">Publish</string>
+    <string name="support">Support</string>
+    <string name="supported">Supported</string>
+    <string name="live">Live</string>
+    <string name="_0">0</string>
+    <string name="stream_count_default">/ 0</string>
+    <string name="drop_a_note">Drop a Note</string>
+    <string name="_0_256">0/256</string>
+    <string name="_256">/256</string>
+    <string name="next">Next</string>
+    <string name="remember">Remember</string>
+    <string name="stream_id">ID:</string>
+    <string name="enter_note">No note to share!</string>
+    <string name="default_cost">0.99</string>
+    <string name="no_card">You\'ve not added any card or card details is incomplete.</string>
+    <string name="no_image">No image selected!</string>
+    <string name="stop">Stop</string>
+    <string name="add_card">Add Card</string>
+    <string name="you">You:</string>
+    <string name="stranger">Stranger:</string>
+    <string name="name">Name</string>
+    <string name="image_url">Image URL E.g: https://</string>
+    <string name="connecting_to_server">Connecting to server…</string>
+    <string name="edit">Edit</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="_0_64">0/64</string>
+    <string name="bio">Bio</string>
+    <string name="go_live">Go Live</string>
+    <string name="tag">#</string>
+    <string name="start_a_stream">Start a Stream</string>
+    <string name="how_it_works">How it Works</string>
+    <string name="stream_tag">Stream Tag</string>
+    <string name="_0_16">0/16</string>
+    <string name="_16">/16</string>
+    <string name="selected">Selected!</string>
+    <string name="no_username_img">No Avatar selected or Username added!</string>
+    <string name="streamer_msg">Is your turn to Go Live</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="end">End</string>
+    <string name="_0_127">0/127</string>
+    <string name="_127">/127</string>
+    <string name="password">Password</string>
+    <string name="busy">Server is busy</string>
+
+    <string name="_5_min">5 min</string>
+    <string name="_10_min">10 min</string>
+    <string name="_20_min">20 min</string>
+    <string name="_30_min">30 min</string>
+    <string name="select_time">Select stream period</string>
+    <string name="token_not_existing">Token does not exist!</string>
+    <string name="proceed">Proceed</string>
+    <string name="web_version">Web Version</string>
+    <string name="added_to_queue">Added to Queue</string>
+    <string name="full_queue">Queue is full</string>
+    <string name="now">Now</string>
+    <string name="note_sent">Note sent!</string>
+
+    <!-- ======================================== Terms Start ========================================= -->
+    <string name="legalText">Legal: In use of this app, I hereby agree to the ‘Vebbo’ terms and conditions 2021.</string>
+    <string name="privacyText">PRIVACY POLICY \n\n
+            1. COLLECTION OF INFORMATION</string>
+    <string name="collectionText">We collect information such as usage statistics from your use of the app, the creation of your account and any communications with ourselves. \n
+        This information collected includes your personal data such as your name and email address. Any information you choose to provide will be collected via the app.
+    </string>
+    <string name="deviceInfo">DEVICE INFORMATION WE COLLECT: \n\n
+Log information: Information regarding your use of the app on your device is stored including access times, your IP address and how you’ve interacted with our platform.
+Hardware Information: We collect information about your mobile device used to access our product. This includes: Your operating system and version and network information.
+Location Information: The app uses location information to provide a better experience this data is stored from your device each time you choose to use location services within the app.
+    </string>
+    <string name="useOfInfo">2. USE OF INFORMATION:</string>
+    <string name="useOfInfoText">We use information collected from you to improve and protect the Vebbo\'s platform and it’s users. \n
+            User queries and discussion
+            We may also use information about you when: \n
+- Responding to your comments, questions and requests regarding the services provided by Vebbo.
+- Send you information, updates and support with your permission
+- Communicate with you about products, services and information offered by us.</string>
+    <string name="sharingInfo">3. SHARING INFORMATION: \n\n
+We do not share any of your information without your consent. This information may be used to improve the platform but will not be sent to any third-party service providers.
+The product may implement sharing features across social media platforms and services. The services use of this information will be governed by their own privacy policies and conditions.
+    </string>
+    <string name="security">4. SECURITY: \n\n
+ We are concerned with the security of all transactions made within our app that is why our payment platform are encrypted for safe transactions and
+        card details are not sent, saved, shared or revealed to any third party before or after any payment, they are cached locally to on your device.
+        \n Note: All tokens generated are stored locally on your device and are validated on our server before use,
+        so it is advised not to clear app data after token is purchased.
+    </string>
+    <string name="yourChoices">5. YOUR CHOICES: \n\n
+We would like to remind the user that the way they use the platform must adhere to our use policies and that you may be liable for any misconduct. If you do not wish to adhere to the policies outlined in this documentation.
+        Email stackdriveinc@gmail.com to deactivate your account.
+These policies are subject to status and may be changed in the future when this occurs the app will be updated with the changes outlined. \n\n
+
+USE POLICES: \n\n
+Any unlawful use of the app will be notified to local police services to be further investigated. Your personal information and service data will be given.
+We may modify, suspend or terminate your account if, in our sole discretion we decide that you have violated the policies or guidelines that are part of this agreement, or to protect the platform and its users.
+Any fees or payments made to the platform currently (or in the future) are paid by you the user and any queries regarding payments will be handled individually depending on outlined circumstances. \n</string>
+
+    <!-- ======================================== Terms Ends Here ========================================= -->
+
+    <!-- ======================================== License Start ========================================= -->
+
+    <string name="thirdPartyText">THIRD PARTY LIBRARY LICENSES APPRECIATION: \n\n
+        Special thanks goes to these free and/or open-source software libraries (FOSS) used in production of ‘Vebbo’ app Android.</string>
+    <string name="third1">1. INTUIT SSP AND SDP LIB: Scalable Size and Display</string>
+    <string name="third2">2. HDODENHOF IMAGEVIEW LIB: Circle Images</string>
+    <string name="third3">3. DROIDSONROIDS LIB: GIF </string>
+    <string name="generalLicense">GENERAL LIB LICENSE: </string>
+
+    <string name="third4">Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at \n\n
+
+          http://www.apache.org/licenses/LICENSE-2.0 \n\n
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License. \n</string>
+
+</resources>

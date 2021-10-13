@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_150"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".activities.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".9"
+        android:background="@color/black_50"
+        android:elevation="@dimen/_32sdp">
+
+        <ImageView
+            android:id="@+id/stream_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <TextureView
+            android:id="@+id/camera_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_12sdp">
+
+            <ImageView
+                android:id="@+id/flag_btn"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:alpha=".7"
+                android:foreground="?attr/selectableItemBackground"
+                android:src="@mipmap/flag"
+                app:layout_constraintEnd_toStartOf="@+id/settings_btn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/settings_btn"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:foreground="?attr/selectableItemBackground"
+                android:src="@mipmap/settings_wh"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/incomingColor" />
+
+            <LinearLayout
+                android:id="@+id/online_lin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <me.vebbo.android.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_online"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:text="@string/online"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    app:font_text="ubuntu.regular.ttf" />
+
+                <me.vebbo.android.utils.CustomTextView
+                    android:id="@+id/online_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:gravity="start"
+                    android:textColor="@color/incomingColor"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    app:font_text="ubuntu.bold.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/prompt_container"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/claps_container"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settings_btn">
+
+                <ImageView
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@mipmap/str"
+                    app:tint="@color/incomingColor" />
+
+                <me.vebbo.android.utils.CustomTextView
+                    android:id="@+id/prompt_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    app:font_text="ubuntu.bold.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/claps_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/nav_container"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:id="@+id/claps_btn"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@mipmap/clap"
+                    app:tint="@color/incomingColor" />
+
+                <me.vebbo.android.utils.CustomTextView
+                    android:id="@+id/claps_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    app:font_text="ubuntu.bold.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nav_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:id="@+id/nav_btn"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@mipmap/dropdown"
+                    app:tint="@color/incomingColor" />
+
+                <ImageView
+                    android:id="@+id/tv_btn"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@mipmap/tv"
+                    app:tint="@color/incomingColor" />
+
+                <me.vebbo.android.utils.CustomButton
+                    android:id="@+id/end_live_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_btn_white"
+                    android:text="@string/end"
+                    android:textAllCaps="false"
+                    android:textColor="@color/incomingColor"
+                    android:textSize="@dimen/_14ssp"
+                    android:visibility="gone"
+                    app:font_button="ubuntu.regular.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/nav_container"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/swap_btn"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:alpha=".7"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@mipmap/swap"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/mic_btn"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:alpha=".7"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@mipmap/mic_block"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/flash_btn"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:alpha=".7"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@mipmap/flash_on"
+                    app:tint="@color/white" />
+
+                <me.vebbo.android.utils.CustomTextView
+                    android:id="@+id/timer_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:gravity="start"
+                    android:textColor="@color/incomingColor"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    app:font_text="ubuntu.bold.ttf" />
+
+                <me.vebbo.android.utils.CustomTextView
+                    android:id="@+id/stream_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:gravity="start"
+                    android:text="@string/tag"
+                    android:textColor="@color/incomingColor"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    app:font_text="ubuntu.bold.ttf" />
+
+                <me.vebbo.android.utils.CustomTextView
+                    android:id="@+id/display_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:background="@drawable/rounded_btn_white"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:gravity="start"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingEnd="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/incomingColor"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    app:font_text="ubuntu.bold.ttf"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/mainImg"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:foreground="?attr/selectableItemBackground"
+                android:src="@drawable/circle_bg"
+                app:layout_constraintEnd_toStartOf="@+id/flag_btn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/no_stream_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/signal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1">
+
+        <RelativeLayout
+            android:id="@+id/comment_field_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_50"
+            android:elevation="@dimen/_32sdp">
+
+            <ImageView
+                android:id="@+id/comment_btn"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_toStartOf="@id/note_btn"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="@dimen/_3sdp"
+                android:src="@mipmap/send"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/note_btn"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="@dimen/_3sdp"
+                android:src="@mipmap/add"
+                app:tint="@color/white"
+                android:alpha=".7"/>
+
+            <me.vebbo.android.utils.CustomEditTextView
+                android:id="@+id/comment_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:layout_toStartOf="@id/comment_btn"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:hint="@string/write"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:padding="@dimen/_4sdp"
+                android:scrollbarSize="@dimen/_2sdp"
+                android:scrollbars="vertical"
+                android:textColor="@color/white"
+                android:textColorHint="@color/trans_white"
+                android:textCursorDrawable="@drawable/cursor_color_white"
+                android:textSize="@dimen/_16ssp"
+                app:font_edit_text="ubuntu.regular.ttf" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/comment_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/comment_field_rel"
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            android:scrollbars="none"
+            tools:listitem="@layout/item_comment" />
+
+    </RelativeLayout>
+
+</LinearLayout>

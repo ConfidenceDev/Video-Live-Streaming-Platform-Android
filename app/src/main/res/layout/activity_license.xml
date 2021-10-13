@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.LicenseActivity"
+    android:background="@color/grey500">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/licenseBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_6sdp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/licenseToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            app:titleTextColor="@color/primary_dark"
+            app:titleTextAppearance="?android:attr/textAppearanceLarge"
+            app:popupTheme="@style/AppTheme.PopupOverLay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/licenseBack"
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:src="@mipmap/ic_close_black"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <me.vebbo.android.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/license"
+                    android:textSize="@dimen/_18ssp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_centerVertical="true"
+                    app:font_text="ubuntu.bold.ttf"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/licenseBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/thirdPartyLibrary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/thirdPartyText"
+                android:gravity="start|top"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                app:font_text="ubuntu.regular.ttf"/>
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/third1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/third1"
+                android:gravity="start|top"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                app:font_text="ubuntu.regular.ttf"/>
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/third2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/third2"
+                android:gravity="start|top"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:font_text="ubuntu.regular.ttf"/>
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/third3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/third3"
+                android:gravity="start|top"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:font_text="ubuntu.regular.ttf"/>
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/generalLicense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/generalLicense"
+                android:gravity="start|top"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:font_text="ubuntu.regular.ttf"/>
+
+            <me.vebbo.android.utils.CustomTextView
+                android:id="@+id/third4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/third4"
+                android:gravity="start|top"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:font_text="ubuntu.regular.ttf"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

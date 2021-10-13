@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbarSize="@dimen/_1sdp"
+    tools:showIn="@layout/activity_edit_account"
+    tools:context=".activities.EditAccountActivity"
+    android:id="@+id/moodScroll">
+
+    <LinearLayout
+        android:id="@+id/moodLin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_8sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood1"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_1"
+            android:tag="mood1"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood2"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_2"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:tag="mood2"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood3"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_3"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood4"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_4"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood5"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_5"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood6"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_6"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood7"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_7"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood8"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_8"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood9"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_9"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood10"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_10"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood11"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_11"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood12"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_12"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood13"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_13"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood14"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_14"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood15"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_15"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood16"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_16"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood17"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_17"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood18"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_18"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood19"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_19"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood20"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_20"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood21"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_21"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood22"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_22"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood23"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_23"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mood24"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mood_24"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+    </LinearLayout>
+
+</HorizontalScrollView>

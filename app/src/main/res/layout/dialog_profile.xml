@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_270sdp"
+    android:layout_height="@dimen/_320sdp"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/_24sdp"
+    android:layout_marginTop="@dimen/_34sdp"
+    android:layout_marginEnd="@dimen/_24sdp"
+    android:layout_marginBottom="@dimen/_34sdp"
+    app:cardCornerRadius="@dimen/_6sdp"
+    app:cardElevation="@dimen/_6sdp"
+    android:background="@color/grey500">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:elevation="@dimen/_4sdp"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:gravity="top"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/bottomLin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_weight=".8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/profile_top_lin"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dialogProfImage"
+                android:layout_width="@dimen/_72sdp"
+                android:layout_height="@dimen/_72sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:src="@drawable/circle_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/closeDialogBtn"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_margin="@dimen/_12sdp"
+                android:src="@mipmap/ic_close"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:foreground="?attr/selectableItemBackground"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_weight="1.2"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/bottomLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:padding="@dimen/_3sdp">
+
+                <me.vebbo.android.utils.CustomTextView
+                    android:id="@+id/dialogName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18ssp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="@dimen/_2sdp"
+                    app:font_text="ubuntu.bold.ttf"
+                    android:layout_marginStart="@dimen/_6sdp"/>
+
+                <me.vebbo.android.utils.CustomTextView
+                    android:id="@+id/dialogLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    app:font_text="ubuntu.regular.ttf"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+
+                <me.vebbo.android.utils.CustomTextView
+                    android:id="@+id/dialogBio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:gravity="start"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    app:font_text="ubuntu.regular.ttf"
+                    android:nestedScrollingEnabled="true"
+                    android:scrollbarSize="@dimen/_1sdp"
+                    android:scrollbars="none"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/grey"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_26sdp"
+                    android:layout_marginStart="@dimen/_26sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp">
+
+                    <ImageView
+                        android:id="@+id/facebook_btn"
+                        android:layout_width="@dimen/_38sdp"
+                        android:layout_height="@dimen/_38sdp"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:src="@drawable/facebook" />
+
+                    <ImageView
+                        android:id="@+id/insta_btn"
+                        android:layout_width="@dimen/_38sdp"
+                        android:layout_height="@dimen/_38sdp"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:src="@drawable/instagram" />
+
+                    <ImageView
+                        android:id="@+id/twit_btn"
+                        android:layout_width="@dimen/_38sdp"
+                        android:layout_height="@dimen/_38sdp"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:src="@drawable/twitter" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/page_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_2sdp"
+                            android:backgroundTint="@color/colorAccent"
+                            android:background="@color/colorAccent"
+                            app:fabCustomSize="@dimen/_36sdp"
+                            android:src="@mipmap/web"
+                            app:maxImageSize="@dimen/_24sdp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

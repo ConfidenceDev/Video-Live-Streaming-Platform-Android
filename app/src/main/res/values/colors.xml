@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#262938</color>
+    <color name="colorPrimaryDark">#181A24</color>
+    <color name="colorAccent">#6b394c</color>
+
+    <color name="colorPrimary100">#191B25</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#CCCCCC</color>
+    <color name="yellow">#F57F17</color>
+    <color name="yellow50">#FFCA36</color>
+    <color name="black_light">#515151</color>
+
+    <color name="black_25">#111111</color>
+    <color name="black_50">#222222</color>
+    <color name="black_100">#262626</color>
+    <color name="black_150">#272727</color>
+    <color name="incomingColor">#eFeFeF</color>
+    <color name="primary_text">#212121</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="light_grey">#E9EDED</color>
+    <color name="light_black">#747474</color>
+    <color name="black_200">#616161</color>
+    <color name="google">#C6412C</color>
+    <color name="black_trans">#11000000</color>
+    <color name="white_trans">#00ffffff</color>
+
+    <color name="dark_transparent">#81000000</color>
+    <color name="primary_dark">#28333D</color>
+    <color name="secondary_text">#434343</color>
+    <color name="secondary_light">#979797</color>
+    <color name="white_100">#11AFAFAF</color>
+    <color name="white_200">#55AFAFAF</color>
+
+    <color name="divider">#BDBDBD</color>
+    <color name="grey100">#AEAEAE</color>
+    <color name="grey200">#DFDFDF</color>
+    <color name="trans_grey200">#90DFDFDF</color>
+    <color name="grey_300">#FFD3D3D3</color>
+    <color name="grey400">#EFEFEF</color>
+    <color name="grey500">#F8F8F8</color>
+
+    <color name="trans_black">#99000000</color>
+    <color name="trans_black100">#33000000</color>
+    <color name="trans_black200">#55000000</color>
+    <color name="nav_black">#40000000</color>
+    <color name="trans_accent">#996b394c</color>
+    <color name="trans_primary">#5553638e</color>
+    <color name="trans_primaryDark">#99181A24</color>
+    <color name="hint_text">#999999</color>
+    <color name="trans_white">#99ffffff</color>
+    <color name="facebook_color">#3B5998</color>
+
+    <color name="background_dark">#ffb8860b</color>
+    <color name="background_light">#ffd2b48c</color>
+    <color name="transparent">#00b8860b</color>
+    <color name="transparent100">#00000000</color>
+
+    <color name="light_green">#99008577</color>
+    <color name="green">#00574B</color>
+    <color name="pink">#D81B60</color>
+
+    <color name="blueish_white">#044fab</color>
+    <color name="pinkish_grey">#ffd6d3</color>
+    <color name="purplish_blue">#933c94</color>
+    <color name="blueish_greyish">#517f95</color>
+    <color name="greenish_white">#43b4ef</color>
+    <color name="dark_greenish_white">#32ff3f</color>
+    <color name="accent100">#933c94</color>
+    <color name="primary100">#597f95</color>
+
+</resources>
