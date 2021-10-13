@@ -3,8 +3,8 @@ A simple live streaming mobile app with cool functionalities and time extension,
 With a payment system integrated. Server is designed with socket.io to give you full flexibility.
 
 # Resources
-Server: <a href="https://github.com/Dev-Geek/Video-Live-Streaming-Platform-Server/blob/main/">https://github.com/Dev-Geek/Video-Live-Streaming-Platform-Server/blob/main/</a>
-Web: <a href="https://github.com/Dev-Geek/Video-Live-Streaming-Platform-Web/blob/main/">https://github.com/Dev-Geek/Video-Live-Streaming-Platform-Web/blob/main/</a>
+Server: <a href="https://github.com/Dev-Geek/Video-Live-Streaming-Platform-Server">https://github.com/Dev-Geek/Video-Live-Streaming-Platform-Server</a>
+Web: <a href="https://github.com/Dev-Geek/Video-Live-Streaming-Platform-Web">https://github.com/Dev-Geek/Video-Live-Streaming-Platform-Web</a>
 
 # ScreenShots
 <p float="left">
